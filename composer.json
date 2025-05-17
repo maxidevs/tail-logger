@@ -1,0 +1,32 @@
+{
+  "name": "maxidev/tail-logger",
+  "description": "Dynamic contextual logger for Laravel with Artisan tailing support",
+  "type": "library",
+  "version": "v1.0.0",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Maxidev\\Logger\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Max",
+      "email": "max@example.com"
+    }
+  ],
+  "require": {
+    "php": "^8.1",
+    "illuminate/support": "^11.0|^12.0",
+    "monolog/monolog": "^3.0"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Maxidev\\Logger\\LoggingServiceProvider"
+      ]
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
